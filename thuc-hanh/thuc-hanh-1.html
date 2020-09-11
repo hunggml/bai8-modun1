@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year = +prompt('nhap nam')
+    let leapYear = false
+    if (year % 4 == 0) {
+        let divisYear4 = year % 4 == 0
+        if (divisYear4) {
+            let divisYear100 = year % 100 == 0
+            if (divisYear100) {
+                let divisYear400 = year % 400 == 0
+                if (divisYear400) {
+                    leapYear = true
+
+                } else {
+                    leapYear = true
+                }
+            }
+        }
+    }
+    if (leapYear) {
+        alert('nam khong nhuan')
+    } else {
+        alert(' nam nhuan')
+    }
+</script>
+</body>
+</html>
