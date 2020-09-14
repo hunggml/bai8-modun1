@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = +prompt('nhap so giay goi')
+    let six_second = 80
+    let one_second_cont = 13.33
+    let tien = a * one_second_cont + six_second
+    if (a == 0) {
+        alert('0VND')
+    } else if (a < 0) {
+        alert('sai cu phap')
+    } else if (a <= 6) {
+        alert('80VND')
+    } else {
+        alert(tien + ' VND')
+    }
+
+</script>
+
+</body>
+</html>
